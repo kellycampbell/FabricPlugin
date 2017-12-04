@@ -22,8 +22,13 @@ repositories {
 }
 
 dependencies {
-  compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+  // Crashlytics Kit
+  compile('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
     transitive = true;
+  }
+  // NDK Kit
+  compile('com.crashlytics.sdk.android:crashlytics-ndk:2.0.0@aar') {
+    transitive = true
   }
 }
 
