@@ -39,7 +39,7 @@ public class FabricPlugin extends CordovaPlugin {
 
 	@Override
 	protected void pluginInitialize() {
-		Fabric.with(this.cordova.getActivity().getApplicationContext(), new Crashlytics(), new Answers());
+		Fabric.with(this.cordova.getActivity().getApplicationContext(), new Crashlytics(), new CrashlyticsNdk(), new Answers());
 	}
 
 	@Override
