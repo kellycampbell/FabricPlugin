@@ -22,6 +22,7 @@ repositories {
 }
 
 dependencies {
+  // Crashlytics Kit
   compile('com.crashlytics.sdk.android:crashlytics:2.9.3@aar') {
     transitive = true;
   }
