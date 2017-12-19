@@ -1,6 +1,4 @@
 
-def packageName = getPackageName()
-
 buildscript {
   repositories {
     maven { url 'https://maven.fabric.io/public' }
@@ -9,12 +7,6 @@ buildscript {
   dependencies {
     classpath 'io.fabric.tools:gradle:1.+'
   }
-}
-
-android {
-    defaultConfig {
-        applicationId packageName
-    }
 }
 
 repositories {
@@ -30,11 +22,4 @@ dependencies {
   compile('com.crashlytics.sdk.android:crashlytics-ndk:2.0.1@aar') {
     transitive = true
   }
-}
-
-def getPackageName() {
-    def config = file("res/xml/config.xml").getText()
-    def xml = new XmlParser(false, false).parseText(config)
-    def id = xml.attribute("id")
-    return id.replaceAll('-','_')
 }

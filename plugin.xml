@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugin id="com.stratisems.cordova.fabric-plugin" version="2.1.3" xmlns="http://www.phonegap.com/ns/plugins/1.0">
+<plugin id="stratis-cordova-fabric-plugin" version="2.2.0" xmlns="http://www.phonegap.com/ns/plugins/1.0">
 
-    <name>cordova-fabric-plugin</name>
+    <name>stratis-cordova-fabric-plugin</name>
     <description>Cordova Fabric.io Plugin</description>
     <license>MIT</license>
-    <keywords>cordova,fabric,craslytics,answers,events,device,ios,android</keywords>
+    <keywords>cordova,fabric,crashlytics,answers,events,device,ios,android</keywords>
 
     <preference name="FABRIC_API_KEY" />
     <preference name="FABRIC_API_SECRET" />
