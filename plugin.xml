@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugin id="stratis-cordova-fabric-plugin" version="2.3.1" xmlns="http://www.phonegap.com/ns/plugins/1.0">
+<plugin id="stratis-cordova-fabric-plugin" version="2.3.6" xmlns="http://www.phonegap.com/ns/plugins/1.0">
 
     <name>stratis-cordova-fabric-plugin</name>
     <description>Cordova Fabric.io Plugin</description>
@@ -13,6 +13,7 @@
     <hook type="after_plugin_install" src="hooks/after_plugin_add.js" />
     <hook type="after_platform_add" src="hooks/after_plugin_add.js" />
     <hook type="before_plugin_uninstall" src="hooks/before_plugin_rm.js" />
+    <hook type="after_prepare" src="hooks/after_prepare.js" />
 
     <js-module name="FabricPlugin" src="www/FabricPlugin.js">
         <clobbers target="window.fabric.core"/>
