@@ -1,6 +1,6 @@
 {
     "name": "stratis-cordova-fabric-plugin",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "description": "Cordova Fabric.io Plugin",
     "cordova": {
         "id": "stratis-cordova-fabric-plugin",
@@ -40,21 +40,9 @@
     "license": "MIT",
     "scripts": {
         "transpile": "node_modules/.bin/babel www/*.es6 --out-dir .",
-        "add-packages": "./scripts/add-packages.sh",
-        "postinstall": "opencollective postinstall"
+        "add-packages": "./scripts/add-packages.sh"
     },
     "devDependencies": {
         "babel": "^5.8.35"
-    },
-    "packages": {
-        "fabric": "1.7.2",
-        "crashlytics": "3.9.3"
-    },
-    "dependencies": {
-        "opencollective": "^1.0.3"
-    },
-    "collective": {
-        "type": "opencollective",
-        "url": "https://opencollective.com/FabricPlugin"
     }
 }
