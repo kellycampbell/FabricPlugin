@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugin id="stratis-cordova-fabric-plugin" version="2.2.14" xmlns="http://www.phonegap.com/ns/plugins/1.0">
+<plugin id="stratis-cordova-fabric-plugin" version="2.3.0" xmlns="http://www.phonegap.com/ns/plugins/1.0">
 
     <name>stratis-cordova-fabric-plugin</name>
     <description>Cordova Fabric.io Plugin</description>
@@ -82,13 +82,12 @@
 
         <source-file src="src/ios/FabricPlugin.m"/>
 
-        <framework src="libz.dylib" />
-        <framework src="libc++.dylib" />
         <framework src="SystemConfiguration.framework" />
         <framework src="Security.framework" weak="true" />
 
-        <framework src="lib/ios/Fabric.framework" custom="true" />
-        <framework src="lib/ios/Crashlytics.framework" custom="true" />
+        <framework src="Fabric" type="podspec" spec="1.7.9" />
+        <framework src="Crashlytics" type="podspec" spec="3.10.5" />
+
     </platform>
 
 </plugin>

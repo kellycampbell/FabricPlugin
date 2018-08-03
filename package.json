@@ -1,6 +1,6 @@
 {
     "name": "stratis-cordova-fabric-plugin",
-    "version": "2.2.14",
+    "version": "2.3.0",
     "description": "Cordova Fabric.io Plugin",
     "cordova": {
         "id": "stratis-cordova-fabric-plugin",
@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/sarriaroman/FabricPlugin"
+        "url": "https://github.com/kellycampbell/FabricPlugin"
     },
     "keywords": [
         "cordova",
