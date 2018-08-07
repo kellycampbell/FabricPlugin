@@ -11,7 +11,8 @@ module.exports = function(context) {
     // console.log("PLATFORMS = " + JSON.stringify(platforms))
     // Add a build phase which runs a shell script that executes the Crashlytics
     // run command line tool which uploads the debug symbols at build time.
-    if (os.platform() == 'darwin') {
+    // Cordova doesn't always send any platforms to this hook for some reason
+    if (os.platform() == 'darwin' && platforms.length == 1 && platforms[0] != "android") {
       var xcodeProjectPath = utilities.getXcodeProjectPath(context);
       if (xcodeProjectPath) {
         iosHelper.removeShellScriptBuildPhase(context, xcodeProjectPath);
