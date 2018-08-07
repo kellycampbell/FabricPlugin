@@ -1,6 +1,6 @@
 {
     "name": "stratis-cordova-fabric-plugin",
-    "version": "2.3.6",
+    "version": "2.3.7",
     "description": "Cordova Fabric.io Plugin",
     "cordova": {
         "id": "stratis-cordova-fabric-plugin",
